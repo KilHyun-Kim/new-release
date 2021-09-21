@@ -19,13 +19,12 @@ const CounterContainers = () => {
     dispatch(increaseBy(diff));
   };
   return (
-    <Counter
-      count={count}
-      onIncrease={onIncrease}
-      onDecrease={onDecrease}
-      onIncreaseBy={onIncreaseBy}
-    />
+    <></>
+    // <Counter
+    //   count={count}
+    //   onIncrease={onIncrease}
+    //   onDecrease={onDecrease}
+    //   onIncreaseBy={onIncreaseBy}
+    // />
   );
 };
-
-export default CounterContainers;

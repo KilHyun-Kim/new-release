@@ -1,9 +1,9 @@
 import React from "react";
-import CounterContainers from "./containers/CounterContainers";
+import Counter from "./components/Counter";
 // import Root from "./routes";
 
 function App() {
-  return <CounterContainers />;
+  return <Counter />;
 }
 
 export default App;
