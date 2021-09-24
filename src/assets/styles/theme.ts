@@ -1,10 +1,10 @@
-import { DefaultTheme } from "styled-components";
+import { ButtonTheme, DefaultTheme } from "styled-components";
 
 const theme: DefaultTheme = {
   basicWidth: "320px",
 
   color: {
-    main: "#dddddd",
+    main: "white",
     sub: "#fff",
   },
 };
@@ -18,4 +18,9 @@ const nextTheme: DefaultTheme = {
   },
 };
 
-export { theme, nextTheme };
+const buttonTheme: ButtonTheme = {
+  background: "#ddd",
+  color: "#000",
+};
+
+export { theme, nextTheme, buttonTheme };

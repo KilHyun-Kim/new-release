@@ -13,6 +13,7 @@
     "@types/react-redux": "^7.1.18",
     "@types/react-router-dom": "^5.1.9",
     "@types/styled-components": "^5.1.14",
+    "http-proxy-middleware": "^2.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.5",
@@ -25,7 +26,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm-run-all --parallel start:**",
+    "start:client": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -36,7 +38,6 @@
       "react-app/jest"
     ]
   },
-  "main": "src/index.tsx",
   "browserslist": {
     "production": [
       ">0.2%",

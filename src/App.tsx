@@ -1,9 +1,8 @@
 import React from "react";
-import Counter from "./components/Counter";
-// import Root from "./routes";
+import Root from "./routes";
 
 function App() {
-  return <Counter />;
+  return <Root />;
 }
 
 export default App;
