@@ -1,23 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import Button from "../common/Button";
+import PositionSelect from "./PositionSelect";
+import TechSelect from "./TechSelect";
 
 const WelcomeWrap = styled.div`
   height: 100vh;
-  padding: 50px 20px;
-`;
-const WelcomeTitle = styled.div`
-  text-align: center;
-  font-size: 32px;
+  padding: 10px;
 `;
 
-const Welcome = () => {
+function Welcome() {
+  const [clear, setClear] = useState<boolean>(false);
+  useEffect(() => {
+    // localStorage 로 먼저 구현 예정
+  }, []);
   return (
     <WelcomeWrap>
-      <WelcomeTitle>당신의 포지션은?</WelcomeTitle>
-      <Button type={"BLUE"}>hi</Button>
+      {clear ? (
+        <TechSelect setClear={setClear}></TechSelect>
+      ) : (
+        <PositionSelect setClear={setClear}></PositionSelect>
+      )}
     </WelcomeWrap>
   );
-};
+}
 
 export default Welcome;
