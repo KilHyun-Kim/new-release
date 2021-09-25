@@ -5,7 +5,6 @@ import TechSelect from "./TechSelect";
 
 const WelcomeWrap = styled.div`
   height: 100vh;
-  padding: 10px;
 `;
 
 function Welcome() {
